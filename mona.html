@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="open-sans.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Meal Planner</title>
+   
+</head>
+<body>
+    <div class="header-container">
+        <img src="./logo/brand.svg" id="logo" />
+        <h1></h1>
+        <input type="text" id="inputSearch" placeholder="Search by recipe or ingredient" />
+        <button id="searchButton">Search</button>
+    </div>
+    <!--<div class="controller-btn">
+      <button id="add-meal">Add to your plan</button>
+    </div>-->
+    <div class="dropdown" id="dropdown">
+        <ul class="list"></ul>
+    </div>
+    <div class="table" id="table"></div>
+    <div id="meal-card">
+        <div id="meal-image"></div>
+        <div id="meal-info"></div>
+    </div>
+    <script src="./mona.js"></script>
+</body>
+</html>
