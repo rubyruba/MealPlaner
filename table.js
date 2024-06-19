@@ -1,6 +1,5 @@
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const meals = ["Day", "Breakfast", "Lunch", "Dinner"];
-
 const table = document.getElementById('table');
 
 // Create and append header row for meals
@@ -34,6 +33,11 @@ for (let i = 0; i < days.length; i++) {
         mealCell.innerText = ''; // Empty cell for future use
         row.appendChild(mealCell);
 
+        // Add click event listener to each cell
+        mealCell.addEventListener('click', () => {
+            selectCell(days[i], meals[j]);
+        });
+
         // Store reference to cells for future use
         if (!cells[days[i]]) {
             cells[days[i]] = {};
@@ -44,9 +48,12 @@ for (let i = 0; i < days.length; i++) {
     table.appendChild(row);
 }
 
-// Event listener for pasta item
-const pasta = document.getElementById('pasta');
-pasta.addEventListener('click', function() {
-    // Set the text content for Monday breakfast cell
-    cells["Monday"]["Breakfast"].innerText = "Pasta";
-});
+let selectedCell = null;
+
+const selectCell = (day, mealTime) => {
+    if (selectedCell) {
+        selectedCell.classList.remove('selected');
+    }
+    selectedCell = cells[day][mealTime];
+    selectedCell.classList.add('selected');
+};
