@@ -1,17 +1,11 @@
-
 body,
 *,
 html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
 
-.container {
-  padding-bottom: 20px;
-  min-height: 100vh;
-}
 
 .headName {
   color: rgb(34, 34, 97);
@@ -39,11 +33,11 @@ html {
   margin-bottom: 10px;
 }
 /*====================== table section =================== */
-.controller-btn{
-    display: flex;
-    justify-content: end;
+.controller-btn {
+  display: flex;
+  justify-content: end;
 }
-.controller-btn >button{
+.controller-btn > button {
   background: rgb(255, 251, 0);
   color: gray;
   margin-bottom: 10px;
@@ -59,7 +53,6 @@ html {
   padding: 10px;
   border: 1px solid #0bf35c;
   text-align: center;
-
 }
 .header {
   font-weight: bold;
@@ -67,28 +60,24 @@ html {
   color: rgb(0, 56, 0);
 }
 .week-name {
-    font-weight: bold;
-    background-color: hsl(186, 87%, 50%);
-    color: rgb(88, 19, 215);
+  font-weight: bold;
+  background-color: hsl(186, 87%, 50%);
+  color: rgb(88, 19, 215);
 }
 .row {
   display: contents;
-
 }
 .item {
-    cursor: pointer;
-    padding: 5px;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
-    display: inline-block;
-    margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  display: inline-block;
+  margin: 5px;
 }
 .item:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
-
-
-
 
 #logo {
   width: 40px;
@@ -127,7 +116,7 @@ ul.list {
 ul.list li {
   float: left;
   width: 200px;
-  height: 100%;
+
   margin: 0 10px 10px 0;
   text-align: center;
   background-color: white;
@@ -151,9 +140,8 @@ ul.list li img {
   border-radius: 15px 15px 0 0;
 }
 
-
 .header-container {
-  background-image: url("https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -244,7 +232,7 @@ button:hover {
   font-weight: bold;
 }
 
-#meal-info ul li:nth-child(2)~li {
+#meal-info ul li:nth-child(2) ~ li {
   margin-top: 10px;
 }
 
@@ -257,20 +245,53 @@ button:hover {
   margin-right: 10px;
 }
 
-#meal-info ul:first-child li:nth-child(-n+10) {
+#meal-info ul:first-child li:nth-child(-n + 10) {
   display: inline-block;
   margin-right: 10px;
 }
 
-#meal-info ul:first-child li:nth-child(-n+10):nth-child(odd) {
+#meal-info ul:first-child li:nth-child(-n + 10):nth-child(odd) {
   background-color: #f0f0f0;
 }
 
-.myclass {}
+.myclass {
+}
 
 .description {
   width: auto;
 }
 .selected {
   background-color: yellow; /* Highlight color */
+}
+
+/* ==================prince==================== */
+.container {
+  padding-bottom: 20px;
+  /* min-height: 100vh; */
+}
+
+.headName {
+  color: rgb(34, 34, 97);
+  text-align: center;
+  padding-top: 20px;
+}
+
+#msg {
+  text-align: center;
+  color: red;
+  display: none;
+  margin-bottom: 20px;
+}
+#items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.singleItem {
+  cursor: pointer;
+}
+#details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }

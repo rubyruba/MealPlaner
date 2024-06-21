@@ -10,6 +10,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
+
     <title>Meal Planner</title>
 </head>
 
@@ -26,35 +27,33 @@
     </div>
 
     <div class="dropdown" id="dropdown">
-        <ul class="list search-results" id="items"></ul>
+        <ul class="list search-results"></ul>
     </div>
     <div class="container">
-        <div id="msg" style="display: none;">
+        <div id="msg">
             <h3>Not found, please search something else...</h3>
         </div>
 
         <div id="details"></div>
+        <div id="items"></div>
     </div>
 
-
+    <div id="recipeDetails"></div>
     <div class="your-result">
         <div id="meal-card">
             <div id="meal-image"></div>
             <div id="meal-info"></div>
         </div>
-        <button id="addToTableButton">Add to planner</button>
     </div>
- 
- 
+
+    <div class="controller-btn"></div>
     <div class="table" id="table"></div>
     <h3>Shopping List</h3>
     <ul id="shopping-list"></ul>
-
-    <script src="RUBA.js"></script>
-    <script src="luiza.js"></script>
-    <script src="prince1.js"></script>
-    <script src="mona1.js"></script>
-   
+    <script src="javascript.js"></script>
+    <script src="./table.js"></script>
+    <!-- <script src="./ruba.js"></script> -->
+    <script src="prince.js"></script>
 </body>
 
 </html>
