@@ -4,6 +4,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
 }
 
 .headName {
@@ -38,13 +39,14 @@ html {
 /*====================== table section =================== */
 .border{
   border-bottom: 1px solid #555c6c;
-  margin: 15px ;
+  /* margin: 15px ; */
 }
 .weekly-palnner{
   display: flex;
   flex-direction: row;
   width: 100%;
-  
+  background-color: rgb(244 246 247);
+  padding: 15px 0;
 }
 .table-area{
   display: flex;
@@ -71,7 +73,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  margin: 20px 40px;
+  margin: 20px 15px;
  
 }
 .header,
@@ -274,7 +276,7 @@ button:hover {
 
 #addToTableButton {
   margin: 0 8%;
-  margin-bottom: 20px;
+ 
 }
 
 #meal-image {
@@ -304,13 +306,13 @@ button:hover {
   margin: 0;
   float: none;
   text-align: left;
-  background-color: white;
+  
   border-radius: 16px;
   display: inline-block;
   font-weight: 400;
   font-size: 14px;
   color: #191b20;
-  padding: 4px 0;
+  padding: 4px;
 }
 
 #meal-info ul li {
@@ -319,7 +321,7 @@ button:hover {
 }
 
 #meal-info ul li:nth-child(1) {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #meal-info ul li:nth-child(2) ~ li {
@@ -357,6 +359,7 @@ button:hover {
 
 a {
   border-radius: 30px;
+  border-color: #555c6c;
   padding: 10px;
   background-color: #e6edef;
   color: #044b5c;
@@ -406,4 +409,9 @@ a:hover {
 }
 #shopping-list{
   margin-top: 20px;
+}
+.your-result{
+  background-color: rgb(244 246 247);
+  padding: 15px 0;
+
 }
