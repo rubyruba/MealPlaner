@@ -39,7 +39,9 @@ function displayMeal(meal) {
 
   let myList = document.createElement("ul");
   myList.id = "listItems";
-  myList.textContent = "Ingredients:";
+  let boldText = document.createElement("span");
+  boldText.innerHTML = "<b>Ingredients:</b><br/>";
+  myList.appendChild(boldText);
   document.getElementById("meal-info").appendChild(myList);
 
   let ingredients = [];
