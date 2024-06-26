@@ -4,7 +4,6 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
 
 .headName {
@@ -32,30 +31,29 @@ html {
   justify-content: center;
   margin-bottom: 10px;
 }
-.action-container{
+.action-container {
   display: flex;
   justify-content: space-between;
 }
 /*====================== table section =================== */
-.border{
+.border {
   border-bottom: 1px solid #555c6c;
   /* margin: 15px ; */
 }
-.weekly-palnner{
+.weekly-planner {
   display: flex;
   flex-direction: row;
   width: 100%;
   background-color: rgb(244 246 247);
   padding: 15px 0;
 }
-.table-area{
+.table-area {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
-.weekly-palnner-title {
-  padding-left: 55px ;
-
+.weekly-planner-title {
+  padding-left: 55px;
 }
 .controller-btn {
   display: flex;
@@ -74,12 +72,11 @@ html {
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin: 20px 15px;
- 
 }
 .header,
 .cell {
   padding: 10px;
-  border: 1px solid ;
+  border: 1px solid;
   text-align: center;
 }
 .header {
@@ -94,7 +91,7 @@ html {
   color: rgb(0, 2, 0);
 }
 .row {
-  color:  rgb(0, 2, 0);
+  color: rgb(0, 2, 0);
   display: contents;
 }
 .item {
@@ -137,7 +134,7 @@ p {
   color: #191b20;
 }
 ul.list {
-  background-color: white;
+  background-color: rgb(244 246 247);
   list-style-type: none;
   padding: 10px;
   display: flex;
@@ -174,7 +171,7 @@ ul.list li img {
 }
 
 .header-container {
-  background-image: url("https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -276,7 +273,6 @@ button:hover {
 
 #addToTableButton {
   margin: 0 8%;
- 
 }
 
 #meal-image {
@@ -306,7 +302,7 @@ button:hover {
   margin: 0;
   float: none;
   text-align: left;
-  
+
   border-radius: 16px;
   display: inline-block;
   font-weight: 400;
@@ -402,16 +398,15 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.shoplist-area{
+.shoplist-area {
   display: flex;
   flex-direction: column;
   padding-left: 55px;
 }
-#shopping-list{
+#shopping-list {
   margin-top: 20px;
 }
-.your-result{
+.your-result {
   background-color: rgb(244 246 247);
   padding: 15px 0;
-
 }
