@@ -46,6 +46,11 @@ html {
   width: 100%;
   background-color: rgb(244 246 247);
   padding: 15px 0;
+
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 .table-area {
   display: flex;
@@ -264,6 +269,8 @@ button:hover {
 }
 /* =================ruba=========== */
 #meal-card {
+  position: relative;
+
   height: 100%;
   margin: 0 5%;
   display: flex;
@@ -409,4 +416,70 @@ a:hover {
 .your-result {
   background-color: rgb(244 246 247);
   padding: 15px 0;
+  /* background-image:url("./logo/bg.jpg"); */
+}
+.background {
+  opacity: 0.13;
+
+  position: absolute;
+  left: 0;
+  top: 21%;
+  width: 100%;
+  height: 102vh;
+}
+.weekly-planner::after {
+  top: 128%;
+  content: '';
+  background: url('./logo/bg1.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;
+  -webkit-filter: grayscale(1); /* Old WebKit */
+  filter: grayscale(1);
+}
+/* On screens that are 700px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+ #meal-card{
+  display: flex;
+  flex-direction: column;
+ }
+ #meal-info{
+  order:2;
+  width:100%;
+ }
+ #meal-image{
+  order:1;
+  width: 60%;
+  margin-bottom: 20px;
+ }
+ .action-container{
+  flex-direction: column;
+ }
+ .action-container > a{
+  order:2;
+  width:60%;
+  margin-top: 8px;
+
+ }
+ .action-container> button{
+  width: 30%;
+  margin: 0 !important;
+  
+ }
+ .your-result{
+  padding: 10px;
+  
+ }
+ .background {
+  
+  top: 25%;}
+  .weekly-planner{
+    flex-direction: column;
+  }
+  .table-area{width: 90%;}
 }
